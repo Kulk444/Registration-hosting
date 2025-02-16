@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic in JavaScript</title>
+</head>
+<body>
+
+    <h2>JavaScript Arithmetic in HTML</h2>
+
+    <p id="addResult">Click the button to add 1052 + 7.</p>
+    <p id="subResult">Click the button to subtract 500 - 1.</p>
+    <p id="mulResult">Click the button to multiply 400 * 8.</p>
+    <p id="divResult">Click the button to divide 343 / 7.</p>
+
+    <button onclick="addNumbers()">Addition</button>
+    <button onclick="subtractNumbers()">Subtraction</button>
+    <button onclick="multiplyNumbers()">Multiplication</button>
+    <button onclick="divideNumbers()">Division</button>
+
+    <script>
+        function addNumbers() {
+            let sum = 1052 + 7;
+            document.getElementById("addResult").innerText = "Addition Result: " + sum;
+        }
+
+        function subtractNumbers() {
+            let difference = 500 - 1;
+            document.getElementById("subResult").innerText = "Subtraction Result: " + difference;
+        }
+
+        function multiplyNumbers() {
+            let product = 400 * 8;
+            document.getElementById("mulResult").innerText = "Multiplication Result: " + product;
+        }
+
+        function divideNumbers() {
+            let quotient = 343 / 7;
+            document.getElementById("divResult").innerText = "Division Result: " + quotient;
+        }
+    </script>
+
+</body>
+</html>
